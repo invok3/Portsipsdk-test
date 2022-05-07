@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditAccount">
+
+    <ScrollView
+
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:background="?attr/backgroundColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            android:scrollbars="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.05" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.35"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_settings"
+                    android:textColor="@color/amber_500" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.35"
+                    android:background="@android:color/darker_gray" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/username" />
+
+                <EditText
+                    android:id="@+id/mUser"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.70"
+                    android:drawableStart="@drawable/ic_baseline_person_gray_24"
+                    android:hint="@string/user"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:paddingHorizontal="10dp"
+                    android:imeOptions="actionNext"
+                    android:text="" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/password" />
+
+                <EditText
+                    android:id="@+id/mPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.70"
+                    android:drawableStart="@drawable/ic_baseline_lock_gray_24"
+                    android:hint="@string/password0"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    android:paddingHorizontal="10dp"
+                    android:drawableEnd="@drawable/ic_outline_visibility_24"
+                    android:imeOptions="actionDone"
+                    android:text="" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.35"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/host_settings"
+                    android:textColor="@color/amber_500" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.35"
+                    android:background="@android:color/darker_gray" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/domain" />
+
+                <EditText
+                    android:id="@+id/mSipHost"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.47"
+                    android:hint="@string/host"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
+                    android:paddingHorizontal="10dp"
+                    android:text=""/>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.02" />
+
+                <EditText
+                    android:id="@+id/mSipPort"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.15"
+                    android:hint="@string/port"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal"
+                    android:paddingHorizontal="10dp"
+                    android:imeOptions="actionNext"
+                    android:text="5060" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.05" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:orientation="vertical">
+
+
+                    <CheckBox
+                        android:id="@+id/useOutBoundCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:onClick="useOutBoundChanged"
+                        android:text="@string/use_outbound" />
+
+                    <LinearLayout
+                        android:id="@+id/useOutBoundOption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/mOutBoundHost"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.45"
+                            android:enabled="false"
+                            android:hint="@string/host"
+                            android:importantForAutofill="no"
+                            android:inputType="text"
+                            android:imeOptions="actionNext"
+                            android:paddingHorizontal="10dp" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.02" />
+
+                        <EditText
+                            android:id="@+id/mOutBoundPort"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.20"
+                            android:enabled="false"
+                            android:hint="@string/port"
+                            android:importantForAutofill="no"
+                            android:inputType="numberDecimal"
+                            android:imeOptions="actionDone"
+                            android:paddingHorizontal="10dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.05" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.35"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/advanced_settings"
+                    android:textColor="@color/amber_500" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.35"
+                    android:background="@android:color/darker_gray" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/advanced_settings_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RadioGroup
+                    android:id="@+id/mProtocol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/protocol" />
+
+                    <RadioButton
+                        android:id="@+id/udp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/udp" />
+
+                    <RadioButton
+                        android:id="@+id/tcp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tcp" />
+
+                    <RadioButton
+                        android:id="@+id/tls"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tls" />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/media_encryption_option"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/SRTP_Label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:text="@string/srtp_mode" />
+
+                    <RadioGroup
+                        android:id="@+id/srtp_radio_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <RadioButton
+                            android:id="@+id/SRTP_none"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:enabled="false"
+                            android:text="@string/option_NONE" />
+
+                        <RadioButton
+                            android:id="@+id/SRTP_Force"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:enabled="false"
+                            android:text="@string/force" />
+
+                        <RadioButton
+                            android:id="@+id/SRTP_Prefer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:enabled="false"
+                            android:text="@string/prefer" />
+
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/user_agent" />
+
+                    <EditText
+                        android:id="@+id/mUserAgent"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:hint="@string/user_agent0"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:imeOptions="actionDone"
+                        android:text="AutoPilot" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15" />
+
+                </LinearLayout>
+
+                <!-- <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05" />
+
+                    <CheckBox
+                        android:id="@+id/G711_uLaw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/g711_ulaw" />
+
+                    <CheckBox
+                        android:id="@+id/G711_aLaw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/g711_alaw" />
+
+                    <CheckBox
+                        android:id="@+id/G729"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/g729" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.10" />
+
+                    <TextView
+                        android:id="@+id/toggle_advanced_codecs_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/more" />
+
+                    <ImageButton
+                        android:id="@+id/toggle_advanced_codecs_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bordershape"
+                        android:onClick="toggleAdvancedCodecs"
+                        android:src="@drawable/ic_baseline_expand_more_24" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05" />
+
+                </LinearLayout> -->
+
+
+
+
+
+
+
+                <GridLayout
+                    android:paddingHorizontal="10dp"
+                    android:id="@+id/advanced_codecs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:visibility="visible">
+
+
+
+                    <CheckBox
+                        android:id="@+id/PCMA"
+                        android:layout_columnWeight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="PCMA" />
+
+                    <CheckBox
+                        android:id="@+id/PCMU"
+                        android:layout_columnWeight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="PCMU" />
+
+                    <CheckBox android:id="@+id/toggle_advanced_codecs_button"
+                        android:layout_columnWeight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="toggleAdvancedCodecs"
+                        android:button="@null"
+                        android:text="@string/more"
+                        android:drawableEnd="@drawable/ic_baseline_expand_more_24" />
+
+                    <CheckBox
+                        android:id="@+id/G729"
+                        android:visibility="gone"
+                        android:layout_columnWeight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/g729" />
+
+                    <!-- <ImageButton
+                        android:layout_columnWeight="1"
+                        android:id="@+id/toggle_advanced_codecs_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bordershape"
+                        android:onClick="toggleAdvancedCodecs"
+                        android:src="@drawable/ic_baseline_expand_more_24" /> -->
+
+
+
+
+                    <CheckBox
+                        android:layout_columnWeight="1"
+                        android:visibility="gone"
+                        android:id="@+id/GSM"
+                        android:checked="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gsm" />
+
+                    <CheckBox
+                        android:layout_columnWeight="1"
+                        android:visibility="gone"
+                        android:id="@+id/iLBC"
+                        android:checked="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ilbc" />
+
+                    <CheckBox
+                        android:layout_columnWeight="1"
+                        android:visibility="gone"
+                        android:id="@+id/Opus"
+                        android:checked="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opus" />
+
+                    <CheckBox
+                        android:layout_columnWeight="1"
+                        android:visibility="gone"
+                        android:id="@+id/G722"
+                        android:checked="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/g722" />
+
+                    <CheckBox
+                        android:layout_columnWeight="1"
+                        android:visibility="gone"
+                        android:id="@+id/DTMF"
+                        android:checked="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DTMF" />
+
+                    <CheckBox
+                        android:layout_columnWeight="1"
+                        android:visibility="gone"
+                        android:id="@+id/SPEEX"
+                        android:checked="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/speex" />
+
+                    <CheckBox
+                        android:layout_columnWeight="1"
+                        android:visibility="gone"
+                        android:id="@+id/SPEEX_WB"
+                        android:checked="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/speex_wb" />
+
+                    <CheckBox
+                        android:layout_columnWeight="1"
+                        android:visibility="gone"
+                        android:id="@+id/AMR"
+                        android:checked="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/amr" />
+
+                    <CheckBox
+                        android:layout_columnWeight="1"
+                        android:visibility="gone"
+                        android:id="@+id/AMR_WB"
+                        android:checked="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/amr_wb" />
+                    <CheckBox
+                        android:layout_columnWeight="1"
+                        android:visibility="gone"
+                        android:id="@+id/ISACWB"
+                        android:checked="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ISACWB" />
+                    <CheckBox
+                        android:layout_columnWeight="1"
+                        android:visibility="gone"
+                        android:id="@+id/ISACSWB"
+                        android:checked="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ISACSWB" />
+
+
+
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2">
+
+                    <CheckBox
+                        android:id="@+id/mLateOffer"
+                        android:checked="false"
+                        android:enabled="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/allow_late_offer" />
+
+                    <CheckBox
+                        android:id="@+id/PRACK"
+                        android:checked="false"
+                        android:enabled="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/prack" />
+
+                </GridLayout>
+
+                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.03" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/max_lines" />
+
+                    <EditText
+                        android:id="@+id/Max_Line"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:hint="@string/max_line"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:imeOptions="actionDone"
+                        android:text="8" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.01" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/call_delay" />
+
+                    <EditText
+                        android:id="@+id/Call_Delay"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:hint="@string/call_delay0"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:imeOptions="actionDone"
+                        android:text="10" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.03" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:text="@string/dial_prefix" />
+
+                    <EditText
+                        android:id="@+id/Dial_Prefix"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:hint="@string/dial_prefix0"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:imeOptions="actionDone"
+                        android:text="00" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--            <ImageButton-->
+            <!--                android:id="@+id/toggle_advanced_settings_button"-->
+            <!--                style="@style/TextAppearance.AppCompat.Button"-->
+            <!--                android:layout_width="35dp"-->
+            <!--                android:layout_height="35dp"-->
+            <!--                android:background="@drawable/ic_baseline_expand_more_24"-->
+            <!--                android:onClick="toggleAdvancedSettings" />-->
+            <ImageButton
+                android:id="@+id/toggle_advanced_settings_button"
+                style="@style/TextAppearance.AppCompat.Button"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/bordershape"
+                android:onClick="toggleAdvancedSettings"
+                android:src="@drawable/ic_baseline_expand_more_24" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+
+                <Button
+                    android:id="@+id/mSaveBtn"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save" />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/state" />
+
+                <TextView
+                    android:id="@+id/registrationState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/offline"
+                    android:textColor="@color/amber_500" />
+
+            </LinearLayout>
+
+            <!--            <Space
+                           android:layout_width="wrap_content"
+                           android:layout_height="0dp"
+                           android:layout_weight="0.2" />   -->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp">
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loading.." />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:indeterminate="false"
+                android:indeterminateTint="#FFCA28"
+                android:paddingHorizontal="20dp"
+                android:progress="50"
+                android:progressBackgroundTint="@color/amber_200"
+                android:progressTint="#FFCA28" />
+
+            <TextView
+                android:id="@+id/cCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/" />
+
+            <TextView
+                android:id="@+id/aCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+
+        </LinearLayout>
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content">-->
+        <!--            <Button-->
+        <!--                android:id="@+id/pauseButton"-->
+        <!--                style="@style/Widget.App.Button.OutlinedButton.IconOnly"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:onClick="pause"-->
+        <!--                app:icon="@drawable/ic_baseline_pause_24" -->
+        <!--                />-->
+
+        <!--            <Button-->
+        <!--                android:id="@+id/playButton"-->
+        <!--                style="@style/Widget.App.Button.OutlinedButton.IconOnly"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:onClick="play"-->
+        <!--                app:icon="@drawable/ic_baseline_play_arrow_24" />-->
+
+        <!--            <Button-->
+        <!--                android:id="@+id/stopButton"-->
+        <!--                style="@style/Widget.App.Button.OutlinedButton.IconOnly"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:onClick="stop"-->
+        <!--                app:icon="@drawable/ic_baseline_stop_24" />-->
+        <!--        </LinearLayout>-->
+    </LinearLayout>
+</RelativeLayout>

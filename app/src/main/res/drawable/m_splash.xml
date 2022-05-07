@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><!--<selector xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+<!--</selector>-->
+
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="500dp"
+        android:height="1000dp"
+        android:drawable="@color/white"
+        android:gravity="center" />
+    <item
+        android:width="250dp"
+        android:height="250dp"
+        android:drawable="@drawable/ic_orange_carrier"
+        android:gravity="center" />
+    <item android:gravity="center"
+        android:top="250dp"
+        android:width="200dp"
+        android:height="19dp"
+        android:drawable="@drawable/txt_orange_carrier_auto_pilot">
+
+    </item>
+</layer-list>
