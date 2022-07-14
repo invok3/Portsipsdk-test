@@ -1,2 +1,1 @@
-# sipdialer
-# using PortSipSdk
+# testing codeblocks, not for use.
