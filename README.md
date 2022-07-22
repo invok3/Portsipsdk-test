@@ -1,1 +1,2 @@
-# testing codeblocks, not for use.
+# Kotlin Implementation of PortSipSdk
+For Testing purpose only.
